@@ -1,0 +1,1239 @@
+ninja: Entering directory `out/x64/Release'
+[1/22] LIB obj/modules/video_coding/codecs/av1/libaom_av1_encoder.lib
+[2/22] LIB obj/modules/video_coding/codecs/av1/libaom_av1_decoder.lib
+[3/22] CXX obj/modules/audio_coding/webrtc_opus_wrapper/opus_interface.obj
+FAILED: obj/modules/audio_coding/webrtc_opus_wrapper/opus_interface.obj 
+ninja -t msvc -e environment.x64 -- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64/cl.exe" /nologo /showIncludes -DWEBRTC_CODEC_OPUS -DWEBRTC_OPUS_SUPPORT_120MS_PTIME=1 -DWEBRTC_CODEC_ISAC -DWEBRTC_CODEC_RED -DUSE_AURA=1 -D_HAS_EXCEPTIONS=0 -D__STD_C -D_CRT_RAND_S -D_CRT_SECURE_NO_DEPRECATE -D_SCL_SECURE_NO_DEPRECATE -D_ATL_NO_OPENGL -D_WINDOWS -DCERT_CHAIN_PARA_HAS_EXTRA_FIELDS -DPSAPI_VERSION=2 -DWIN32 -D_SECURE_ATL -DWINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP -DWIN32_LEAN_AND_MEAN -DNOMINMAX -D_UNICODE -DUNICODE -DNTDDI_VERSION=NTDDI_WIN10_RS2 -D_WIN32_WINNT=0x0A00 -DWINVER=0x0A00 -DNDEBUG -DNVALGRIND -DDYNAMIC_ANNOTATIONS_ENABLED=0 -DWEBRTC_ENABLE_PROTOBUF=0 -DRTC_ENABLE_VP9 -DHAVE_SCTP -DWEBRTC_LIBRARY_IMPL -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0 -DWEBRTC_WIN -DABSL_ALLOCATOR_NOTHROW=1 -I../../.. -Igen -I../../../third_party/abseil-cpp /Gy /FS /bigobj /utf-8 /Zc:sizedDealloc- /wd4117 /D__DATE__= /D__TIME__= /D__TIMESTAMP__= /W4 /WX /wd4091 /wd4127 /wd4251 /wd4275 /wd4312 /wd4324 /wd4351 /wd4355 /wd4503 /wd4589 /wd4611 /wd4100 /wd4121 /wd4244 /wd4505 /wd4510 /wd4512 /wd4610 /wd4838 /wd4995 /wd4996 /wd4456 /wd4457 /wd4458 /wd4459 /wd4200 /wd4201 /wd4204 /wd4221 /wd4245 /wd4267 /wd4305 /wd4389 /wd4702 /wd4701 /wd4703 /wd4661 /wd4706 /wd4715 /O1 /Ob2 /Oy- /Zc:inline /Gw /Oi /MD /wd4702 /wd5041 /wd4267 /TP /wd4577 /GR- /c ../../../modules/audio_coding/codecs/opus/opus_interface.cc /Foobj/modules/audio_coding/webrtc_opus_wrapper/opus_interface.obj /Fd"obj/modules/audio_coding/webrtc_opus_wrapper_cc.pdb"
+注意: 包含文件:  ../../..\modules/audio_coding/codecs/opus/opus_interface.h
+注意: 包含文件:   C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h
+注意: 包含文件:    C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+注意: 包含文件:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winapifamily.h
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winpackagefamily.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h
+注意: 包含文件:   ../../..\modules/audio_coding/codecs/opus/opus_inst.h
+注意: 包含文件:    ../../..\rtc_base/ignore_wundef.h
+../../..\modules/audio_coding/codecs/opus/opus_inst.h(19): fatal error C1083: 无法打开包括文件: “opus.h”: No such file or directory
+[4/22] CXX obj/modules/audio_coding/webrtc_opus/audio_decoder_opus.obj
+FAILED: obj/modules/audio_coding/webrtc_opus/audio_decoder_opus.obj 
+ninja -t msvc -e environment.x64 -- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64/cl.exe" /nologo /showIncludes -DWEBRTC_CODEC_OPUS -DWEBRTC_OPUS_SUPPORT_120MS_PTIME=1 -DWEBRTC_CODEC_ISAC -DWEBRTC_CODEC_RED -DUSE_AURA=1 -D_HAS_EXCEPTIONS=0 -D__STD_C -D_CRT_RAND_S -D_CRT_SECURE_NO_DEPRECATE -D_SCL_SECURE_NO_DEPRECATE -D_ATL_NO_OPENGL -D_WINDOWS -DCERT_CHAIN_PARA_HAS_EXTRA_FIELDS -DPSAPI_VERSION=2 -DWIN32 -D_SECURE_ATL -DWINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP -DWIN32_LEAN_AND_MEAN -DNOMINMAX -D_UNICODE -DUNICODE -DNTDDI_VERSION=NTDDI_WIN10_RS2 -D_WIN32_WINNT=0x0A00 -DWINVER=0x0A00 -DNDEBUG -DNVALGRIND -DDYNAMIC_ANNOTATIONS_ENABLED=0 -DWEBRTC_ENABLE_PROTOBUF=0 -DRTC_ENABLE_VP9 -DHAVE_SCTP -DWEBRTC_LIBRARY_IMPL -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0 -DWEBRTC_WIN -DABSL_ALLOCATOR_NOTHROW=1 -I../../.. -Igen -I../../../third_party/abseil-cpp /Gy /FS /bigobj /utf-8 /Zc:sizedDealloc- /wd4117 /D__DATE__= /D__TIME__= /D__TIMESTAMP__= /W4 /WX /wd4091 /wd4127 /wd4251 /wd4275 /wd4312 /wd4324 /wd4351 /wd4355 /wd4503 /wd4589 /wd4611 /wd4100 /wd4121 /wd4244 /wd4505 /wd4510 /wd4512 /wd4610 /wd4838 /wd4995 /wd4996 /wd4456 /wd4457 /wd4458 /wd4459 /wd4200 /wd4201 /wd4204 /wd4221 /wd4245 /wd4267 /wd4305 /wd4389 /wd4702 /wd4701 /wd4703 /wd4661 /wd4706 /wd4715 /O1 /Ob2 /Oy- /Zc:inline /Gw /Oi /MD /wd4702 /wd5041 /wd4267 /TP /wd4577 /GR- /c ../../../modules/audio_coding/codecs/opus/audio_decoder_opus.cc /Foobj/modules/audio_coding/webrtc_opus/audio_decoder_opus.obj /Fd"obj/modules/audio_coding/webrtc_opus_cc.pdb"
+注意: 包含文件:  ../../..\modules/audio_coding/codecs/opus/audio_decoder_opus.h
+注意: 包含文件:   C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h
+注意: 包含文件:    C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+注意: 包含文件:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winapifamily.h
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winpackagefamily.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdint
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdlib
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_math.h
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdlib.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_malloc.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_search.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cfloat
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\float.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\climits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cwchar
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdio
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdio.h
+注意: 包含文件:          C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_stdio_config.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\wchar.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\errno.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wconio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wctype.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wdirect.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wio.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_share.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wprocess.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/stat.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/types.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\isa_availability.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstddef
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtr1common
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\new
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\exception
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\crtdbg.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\use_ansi.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xatomic.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstring
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memory.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility
+注意: 包含文件:   ../../..\api/audio_codecs/audio_decoder.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iosfwd
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\typeinfo
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_typeinfo.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_exception.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\eh.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_terminate.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/optional.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/config.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/options.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ciso646
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iso646.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/policy_checks.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/utility/utility.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/internal/inline_variable.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/internal/identity.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/internal/invoke.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/meta/type_traits.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/attributes.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/types/bad_optional_access.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdexcept
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/types/internal/optional.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/memory/memory.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/macros.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:        ../../../third_party/abseil-cpp\absl/base/optimization.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\setjmp.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\immintrin.h
+注意: 包含文件:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\wmmintrin.h
+注意: 包含文件:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\nmmintrin.h
+注意: 包含文件:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\smmintrin.h
+注意: 包含文件:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tmmintrin.h
+注意: 包含文件:               C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\pmmintrin.h
+注意: 包含文件:                C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\emmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmmintrin.h
+注意: 包含文件:                  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\mmintrin.h
+注意: 包含文件:                  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\malloc.h
+注意: 包含文件:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\zmmintrin.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ammintrin.h
+注意: 包含文件:        ../../../third_party/abseil-cpp\absl/base/port.h
+注意: 包含文件:    ../../..\api/array_view.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\array
+注意: 包含文件:     ../../..\rtc_base/checks.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\string
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cctype
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\ctype.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/strings/string_view.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iterator
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/internal/throw_delegate.h
+注意: 包含文件:      ../../..\rtc_base/numerics/safe_compare.h
+注意: 包含文件:       ../../..\rtc_base/type_traits.h
+注意: 包含文件:      ../../..\rtc_base/system/inline.h
+注意: 包含文件:      ../../..\rtc_base/system/rtc_export.h
+注意: 包含文件:    ../../..\rtc_base/buffer.h
+注意: 包含文件:     ../../..\rtc_base/zero_memory.h
+注意: 包含文件:    ../../..\rtc_base/constructor_magic.h
+注意: 包含文件:   ../../..\modules/audio_coding/codecs/opus/opus_interface.h
+注意: 包含文件:    ../../..\modules/audio_coding/codecs/opus/opus_inst.h
+注意: 包含文件:     ../../..\rtc_base/ignore_wundef.h
+../../..\modules/audio_coding/codecs/opus/opus_inst.h(19): fatal error C1083: 无法打开包括文件: “opus.h”: No such file or directory
+[5/22] CXX obj/api/audio_codecs/opus/audio_decoder_opus/audio_decoder_opus.obj
+FAILED: obj/api/audio_codecs/opus/audio_decoder_opus/audio_decoder_opus.obj 
+ninja -t msvc -e environment.x64 -- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64/cl.exe" /nologo /showIncludes -DUSE_AURA=1 -D_HAS_EXCEPTIONS=0 -D__STD_C -D_CRT_RAND_S -D_CRT_SECURE_NO_DEPRECATE -D_SCL_SECURE_NO_DEPRECATE -D_ATL_NO_OPENGL -D_WINDOWS -DCERT_CHAIN_PARA_HAS_EXTRA_FIELDS -DPSAPI_VERSION=2 -DWIN32 -D_SECURE_ATL -DWINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP -DWIN32_LEAN_AND_MEAN -DNOMINMAX -D_UNICODE -DUNICODE -DNTDDI_VERSION=NTDDI_WIN10_RS2 -D_WIN32_WINNT=0x0A00 -DWINVER=0x0A00 -DNDEBUG -DNVALGRIND -DDYNAMIC_ANNOTATIONS_ENABLED=0 -DWEBRTC_ENABLE_PROTOBUF=0 -DRTC_ENABLE_VP9 -DHAVE_SCTP -DWEBRTC_LIBRARY_IMPL -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0 -DWEBRTC_WIN -DABSL_ALLOCATOR_NOTHROW=1 -I../../.. -Igen -I../../../third_party/abseil-cpp /Gy /FS /bigobj /utf-8 /Zc:sizedDealloc- /wd4117 /D__DATE__= /D__TIME__= /D__TIMESTAMP__= /W4 /WX /wd4091 /wd4127 /wd4251 /wd4275 /wd4312 /wd4324 /wd4351 /wd4355 /wd4503 /wd4589 /wd4611 /wd4100 /wd4121 /wd4244 /wd4505 /wd4510 /wd4512 /wd4610 /wd4838 /wd4995 /wd4996 /wd4456 /wd4457 /wd4458 /wd4459 /wd4200 /wd4201 /wd4204 /wd4221 /wd4245 /wd4267 /wd4305 /wd4389 /wd4702 /wd4701 /wd4703 /wd4661 /wd4706 /wd4715 /O1 /Ob2 /Oy- /Zc:inline /Gw /Oi /MD /wd4702 /wd5041 /wd4267 /TP /wd4577 /GR- /c ../../../api/audio_codecs/opus/audio_decoder_opus.cc /Foobj/api/audio_codecs/opus/audio_decoder_opus/audio_decoder_opus.obj /Fd"obj/api/audio_codecs/opus/audio_decoder_opus_cc.pdb"
+注意: 包含文件:  ../../..\api/audio_codecs/opus/audio_decoder_opus.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\exception
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\crtdbg.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winapifamily.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winpackagefamily.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\use_ansi.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdint
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstddef
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtr1common
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdlib
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_math.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_malloc.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_search.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iosfwd
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdio
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_stdio_config.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstring
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memory.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\errno.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cwchar
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\wchar.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wconio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wctype.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wdirect.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_share.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wprocess.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/stat.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/types.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\typeinfo
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_typeinfo.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_exception.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\eh.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_terminate.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cfloat
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\float.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\climits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\isa_availability.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\new
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xatomic.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector
+注意: 包含文件:   ../../../third_party/abseil-cpp\absl/types/optional.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/config.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/options.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ciso646
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iso646.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/policy_checks.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/utility/utility.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/inline_variable.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/internal/identity.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/invoke.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/meta/type_traits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/attributes.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/bad_optional_access.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdexcept
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/internal/optional.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/memory/memory.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/macros.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/optimization.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\setjmp.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\immintrin.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\wmmintrin.h
+注意: 包含文件:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\nmmintrin.h
+注意: 包含文件:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\smmintrin.h
+注意: 包含文件:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tmmintrin.h
+注意: 包含文件:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\pmmintrin.h
+注意: 包含文件:               C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\emmintrin.h
+注意: 包含文件:                C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\mmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\malloc.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\zmmintrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ammintrin.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/port.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_codec_pair_id.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_decoder.h
+注意: 包含文件:    ../../..\api/array_view.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\array
+注意: 包含文件:     ../../..\rtc_base/checks.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\string
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cctype
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\ctype.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/strings/string_view.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iterator
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/internal/throw_delegate.h
+注意: 包含文件:      ../../..\rtc_base/numerics/safe_compare.h
+注意: 包含文件:       ../../..\rtc_base/type_traits.h
+注意: 包含文件:      ../../..\rtc_base/system/inline.h
+注意: 包含文件:      ../../..\rtc_base/system/rtc_export.h
+注意: 包含文件:    ../../..\rtc_base/buffer.h
+注意: 包含文件:     ../../..\rtc_base/zero_memory.h
+注意: 包含文件:    ../../..\rtc_base/constructor_magic.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_format.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree
+注意: 包含文件:  ../../../third_party/abseil-cpp\absl/strings/match.h
+注意: 包含文件:  ../../..\modules/audio_coding/codecs/opus/audio_decoder_opus.h
+注意: 包含文件:   ../../..\modules/audio_coding/codecs/opus/opus_interface.h
+注意: 包含文件:    ../../..\modules/audio_coding/codecs/opus/opus_inst.h
+注意: 包含文件:     ../../..\rtc_base/ignore_wundef.h
+../../..\modules/audio_coding/codecs/opus/opus_inst.h(19): fatal error C1083: 无法打开包括文件: “opus.h”: No such file or directory
+[6/22] CXX obj/modules/audio_coding/webrtc_multiopus/audio_decoder_multi_channel_opus_impl.obj
+FAILED: obj/modules/audio_coding/webrtc_multiopus/audio_decoder_multi_channel_opus_impl.obj 
+ninja -t msvc -e environment.x64 -- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64/cl.exe" /nologo /showIncludes -DWEBRTC_CODEC_OPUS -DWEBRTC_OPUS_SUPPORT_120MS_PTIME=1 -DWEBRTC_CODEC_ISAC -DWEBRTC_CODEC_RED -DUSE_AURA=1 -D_HAS_EXCEPTIONS=0 -D__STD_C -D_CRT_RAND_S -D_CRT_SECURE_NO_DEPRECATE -D_SCL_SECURE_NO_DEPRECATE -D_ATL_NO_OPENGL -D_WINDOWS -DCERT_CHAIN_PARA_HAS_EXTRA_FIELDS -DPSAPI_VERSION=2 -DWIN32 -D_SECURE_ATL -DWINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP -DWIN32_LEAN_AND_MEAN -DNOMINMAX -D_UNICODE -DUNICODE -DNTDDI_VERSION=NTDDI_WIN10_RS2 -D_WIN32_WINNT=0x0A00 -DWINVER=0x0A00 -DNDEBUG -DNVALGRIND -DDYNAMIC_ANNOTATIONS_ENABLED=0 -DWEBRTC_ENABLE_PROTOBUF=0 -DRTC_ENABLE_VP9 -DHAVE_SCTP -DWEBRTC_LIBRARY_IMPL -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0 -DWEBRTC_WIN -DABSL_ALLOCATOR_NOTHROW=1 -I../../.. -Igen -I../../../third_party/abseil-cpp /Gy /FS /bigobj /utf-8 /Zc:sizedDealloc- /wd4117 /D__DATE__= /D__TIME__= /D__TIMESTAMP__= /W4 /WX /wd4091 /wd4127 /wd4251 /wd4275 /wd4312 /wd4324 /wd4351 /wd4355 /wd4503 /wd4589 /wd4611 /wd4100 /wd4121 /wd4244 /wd4505 /wd4510 /wd4512 /wd4610 /wd4838 /wd4995 /wd4996 /wd4456 /wd4457 /wd4458 /wd4459 /wd4200 /wd4201 /wd4204 /wd4221 /wd4245 /wd4267 /wd4305 /wd4389 /wd4702 /wd4701 /wd4703 /wd4661 /wd4706 /wd4715 /O1 /Ob2 /Oy- /Zc:inline /Gw /Oi /MD /wd4702 /wd5041 /wd4267 /TP /wd4577 /GR- /c ../../../modules/audio_coding/codecs/opus/audio_decoder_multi_channel_opus_impl.cc /Foobj/modules/audio_coding/webrtc_multiopus/audio_decoder_multi_channel_opus_impl.obj /Fd"obj/modules/audio_coding/webrtc_multiopus_cc.pdb"
+注意: 包含文件:  ../../..\modules/audio_coding/codecs/opus/audio_decoder_multi_channel_opus_impl.h
+注意: 包含文件:   C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h
+注意: 包含文件:    C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+注意: 包含文件:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winapifamily.h
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winpackagefamily.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\exception
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\crtdbg.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\use_ansi.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdint
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstddef
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtr1common
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdlib
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_math.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_malloc.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_search.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iosfwd
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdio
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_stdio_config.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstring
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memory.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\errno.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cwchar
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\wchar.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wconio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wctype.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wdirect.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_share.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wprocess.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/stat.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/types.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\typeinfo
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_typeinfo.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_exception.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\eh.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_terminate.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cfloat
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\float.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\climits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\isa_availability.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\new
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xatomic.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector
+注意: 包含文件:   ../../..\api/audio_codecs/audio_decoder.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/optional.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/config.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/options.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ciso646
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iso646.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/policy_checks.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/utility/utility.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/internal/inline_variable.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/internal/identity.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/internal/invoke.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/meta/type_traits.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/attributes.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/types/bad_optional_access.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdexcept
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/types/internal/optional.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/memory/memory.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/macros.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:        ../../../third_party/abseil-cpp\absl/base/optimization.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\setjmp.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\immintrin.h
+注意: 包含文件:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\wmmintrin.h
+注意: 包含文件:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\nmmintrin.h
+注意: 包含文件:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\smmintrin.h
+注意: 包含文件:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tmmintrin.h
+注意: 包含文件:               C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\pmmintrin.h
+注意: 包含文件:                C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\emmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmmintrin.h
+注意: 包含文件:                  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\mmintrin.h
+注意: 包含文件:                  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\malloc.h
+注意: 包含文件:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\zmmintrin.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ammintrin.h
+注意: 包含文件:        ../../../third_party/abseil-cpp\absl/base/port.h
+注意: 包含文件:    ../../..\api/array_view.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\array
+注意: 包含文件:     ../../..\rtc_base/checks.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\string
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cctype
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\ctype.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/strings/string_view.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iterator
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/internal/throw_delegate.h
+注意: 包含文件:      ../../..\rtc_base/numerics/safe_compare.h
+注意: 包含文件:       ../../..\rtc_base/type_traits.h
+注意: 包含文件:      ../../..\rtc_base/system/inline.h
+注意: 包含文件:      ../../..\rtc_base/system/rtc_export.h
+注意: 包含文件:    ../../..\rtc_base/buffer.h
+注意: 包含文件:     ../../..\rtc_base/zero_memory.h
+注意: 包含文件:    ../../..\rtc_base/constructor_magic.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_format.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree
+注意: 包含文件:   ../../..\api/audio_codecs/opus/audio_decoder_multi_channel_opus_config.h
+注意: 包含文件:   ../../..\modules/audio_coding/codecs/opus/opus_interface.h
+注意: 包含文件:    ../../..\modules/audio_coding/codecs/opus/opus_inst.h
+注意: 包含文件:     ../../..\rtc_base/ignore_wundef.h
+../../..\modules/audio_coding/codecs/opus/opus_inst.h(19): fatal error C1083: 无法打开包括文件: “opus.h”: No such file or directory
+[7/22] CXX obj/api/audio_codecs/opus/audio_encoder_opus/audio_encoder_opus.obj
+FAILED: obj/api/audio_codecs/opus/audio_encoder_opus/audio_encoder_opus.obj 
+ninja -t msvc -e environment.x64 -- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64/cl.exe" /nologo /showIncludes -DUSE_AURA=1 -D_HAS_EXCEPTIONS=0 -D__STD_C -D_CRT_RAND_S -D_CRT_SECURE_NO_DEPRECATE -D_SCL_SECURE_NO_DEPRECATE -D_ATL_NO_OPENGL -D_WINDOWS -DCERT_CHAIN_PARA_HAS_EXTRA_FIELDS -DPSAPI_VERSION=2 -DWIN32 -D_SECURE_ATL -DWINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP -DWIN32_LEAN_AND_MEAN -DNOMINMAX -D_UNICODE -DUNICODE -DNTDDI_VERSION=NTDDI_WIN10_RS2 -D_WIN32_WINNT=0x0A00 -DWINVER=0x0A00 -DNDEBUG -DNVALGRIND -DDYNAMIC_ANNOTATIONS_ENABLED=0 -DWEBRTC_ENABLE_PROTOBUF=0 -DRTC_ENABLE_VP9 -DHAVE_SCTP -DWEBRTC_LIBRARY_IMPL -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0 -DWEBRTC_WIN -DABSL_ALLOCATOR_NOTHROW=1 -I../../.. -Igen -I../../../third_party/abseil-cpp /Gy /FS /bigobj /utf-8 /Zc:sizedDealloc- /wd4117 /D__DATE__= /D__TIME__= /D__TIMESTAMP__= /W4 /WX /wd4091 /wd4127 /wd4251 /wd4275 /wd4312 /wd4324 /wd4351 /wd4355 /wd4503 /wd4589 /wd4611 /wd4100 /wd4121 /wd4244 /wd4505 /wd4510 /wd4512 /wd4610 /wd4838 /wd4995 /wd4996 /wd4456 /wd4457 /wd4458 /wd4459 /wd4200 /wd4201 /wd4204 /wd4221 /wd4245 /wd4267 /wd4305 /wd4389 /wd4702 /wd4701 /wd4703 /wd4661 /wd4706 /wd4715 /O1 /Ob2 /Oy- /Zc:inline /Gw /Oi /MD /wd4702 /wd5041 /wd4267 /TP /wd4577 /GR- /c ../../../api/audio_codecs/opus/audio_encoder_opus.cc /Foobj/api/audio_codecs/opus/audio_encoder_opus/audio_encoder_opus.obj /Fd"obj/api/audio_codecs/opus/audio_encoder_opus_cc.pdb"
+注意: 包含文件:  ../../..\api/audio_codecs/opus/audio_encoder_opus.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\exception
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\crtdbg.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winapifamily.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winpackagefamily.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\use_ansi.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdint
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstddef
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtr1common
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdlib
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_math.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_malloc.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_search.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iosfwd
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdio
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_stdio_config.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstring
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memory.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\errno.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cwchar
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\wchar.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wconio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wctype.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wdirect.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_share.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wprocess.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/stat.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/types.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\typeinfo
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_typeinfo.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_exception.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\eh.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_terminate.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cfloat
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\float.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\climits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\isa_availability.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\new
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xatomic.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector
+注意: 包含文件:   ../../../third_party/abseil-cpp\absl/types/optional.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/config.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/options.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ciso646
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iso646.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/policy_checks.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/utility/utility.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/inline_variable.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/internal/identity.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/invoke.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/meta/type_traits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/attributes.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/bad_optional_access.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdexcept
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/internal/optional.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/memory/memory.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/macros.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/optimization.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\setjmp.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\immintrin.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\wmmintrin.h
+注意: 包含文件:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\nmmintrin.h
+注意: 包含文件:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\smmintrin.h
+注意: 包含文件:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tmmintrin.h
+注意: 包含文件:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\pmmintrin.h
+注意: 包含文件:               C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\emmintrin.h
+注意: 包含文件:                C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\mmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\malloc.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\zmmintrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ammintrin.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/port.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_codec_pair_id.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_encoder.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\string
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cctype
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\ctype.h
+注意: 包含文件:    ../../..\api/array_view.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\array
+注意: 包含文件:     ../../..\rtc_base/checks.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/strings/string_view.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iterator
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/internal/throw_delegate.h
+注意: 包含文件:      ../../..\rtc_base/numerics/safe_compare.h
+注意: 包含文件:       ../../..\rtc_base/type_traits.h
+注意: 包含文件:      ../../..\rtc_base/system/inline.h
+注意: 包含文件:      ../../..\rtc_base/system/rtc_export.h
+注意: 包含文件:    ../../..\api/call/bitrate_allocation.h
+注意: 包含文件:     ../../..\api/units/data_rate.h
+注意: 包含文件:      ../../..\api/units/data_size.h
+注意: 包含文件:       ../../..\rtc_base/units/unit_base.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cmath
+注意: 包含文件:        ../../..\rtc_base/numerics/safe_conversions.h
+注意: 包含文件:         ../../..\rtc_base/numerics/safe_conversions_impl.h
+注意: 包含文件:      ../../..\api/units/frequency.h
+注意: 包含文件:       ../../..\api/units/time_delta.h
+注意: 包含文件:    ../../..\rtc_base/buffer.h
+注意: 包含文件:     ../../..\rtc_base/zero_memory.h
+注意: 包含文件:    ../../..\rtc_base/deprecation.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_format.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree
+注意: 包含文件:   ../../..\api/audio_codecs/opus/audio_encoder_opus_config.h
+注意: 包含文件:  ../../..\modules/audio_coding/codecs/opus/audio_encoder_opus.h
+注意: 包含文件:   ../../..\common_audio/smoothing_filter.h
+注意: 包含文件:    ../../..\rtc_base/constructor_magic.h
+注意: 包含文件:   ../../..\modules/audio_coding/audio_network_adaptor/include/audio_network_adaptor.h
+注意: 包含文件:    ../../..\modules/audio_coding/audio_network_adaptor/include/audio_network_adaptor_config.h
+注意: 包含文件:   ../../..\modules/audio_coding/codecs/opus/opus_interface.h
+注意: 包含文件:    ../../..\modules/audio_coding/codecs/opus/opus_inst.h
+注意: 包含文件:     ../../..\rtc_base/ignore_wundef.h
+../../..\modules/audio_coding/codecs/opus/opus_inst.h(19): fatal error C1083: 无法打开包括文件: “opus.h”: No such file or directory
+[8/22] CXX obj/modules/audio_coding/webrtc_opus/audio_encoder_opus.obj
+FAILED: obj/modules/audio_coding/webrtc_opus/audio_encoder_opus.obj 
+ninja -t msvc -e environment.x64 -- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64/cl.exe" /nologo /showIncludes -DWEBRTC_CODEC_OPUS -DWEBRTC_OPUS_SUPPORT_120MS_PTIME=1 -DWEBRTC_CODEC_ISAC -DWEBRTC_CODEC_RED -DUSE_AURA=1 -D_HAS_EXCEPTIONS=0 -D__STD_C -D_CRT_RAND_S -D_CRT_SECURE_NO_DEPRECATE -D_SCL_SECURE_NO_DEPRECATE -D_ATL_NO_OPENGL -D_WINDOWS -DCERT_CHAIN_PARA_HAS_EXTRA_FIELDS -DPSAPI_VERSION=2 -DWIN32 -D_SECURE_ATL -DWINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP -DWIN32_LEAN_AND_MEAN -DNOMINMAX -D_UNICODE -DUNICODE -DNTDDI_VERSION=NTDDI_WIN10_RS2 -D_WIN32_WINNT=0x0A00 -DWINVER=0x0A00 -DNDEBUG -DNVALGRIND -DDYNAMIC_ANNOTATIONS_ENABLED=0 -DWEBRTC_ENABLE_PROTOBUF=0 -DRTC_ENABLE_VP9 -DHAVE_SCTP -DWEBRTC_LIBRARY_IMPL -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0 -DWEBRTC_WIN -DABSL_ALLOCATOR_NOTHROW=1 -I../../.. -Igen -I../../../third_party/abseil-cpp /Gy /FS /bigobj /utf-8 /Zc:sizedDealloc- /wd4117 /D__DATE__= /D__TIME__= /D__TIMESTAMP__= /W4 /WX /wd4091 /wd4127 /wd4251 /wd4275 /wd4312 /wd4324 /wd4351 /wd4355 /wd4503 /wd4589 /wd4611 /wd4100 /wd4121 /wd4244 /wd4505 /wd4510 /wd4512 /wd4610 /wd4838 /wd4995 /wd4996 /wd4456 /wd4457 /wd4458 /wd4459 /wd4200 /wd4201 /wd4204 /wd4221 /wd4245 /wd4267 /wd4305 /wd4389 /wd4702 /wd4701 /wd4703 /wd4661 /wd4706 /wd4715 /O1 /Ob2 /Oy- /Zc:inline /Gw /Oi /MD /wd4702 /wd5041 /wd4267 /TP /wd4577 /GR- /c ../../../modules/audio_coding/codecs/opus/audio_encoder_opus.cc /Foobj/modules/audio_coding/webrtc_opus/audio_encoder_opus.obj /Fd"obj/modules/audio_coding/webrtc_opus_cc.pdb"
+注意: 包含文件:  ../../..\modules/audio_coding/codecs/opus/audio_encoder_opus.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\exception
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\crtdbg.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winapifamily.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winpackagefamily.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\use_ansi.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdint
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstddef
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtr1common
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdlib
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_math.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_malloc.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_search.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\climits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstring
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memory.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+注意: 包含文件:          C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\errno.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\typeinfo
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_typeinfo.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_exception.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\eh.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_terminate.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cfloat
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\float.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cwchar
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdio
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdio.h
+注意: 包含文件:          C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_stdio_config.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\wchar.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wconio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wctype.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wdirect.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wio.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_share.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wprocess.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/stat.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/types.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\isa_availability.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\new
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xatomic.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iosfwd
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\string
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cctype
+注意: 包含文件:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\ctype.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector
+注意: 包含文件:   ../../../third_party/abseil-cpp\absl/types/optional.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/config.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/options.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ciso646
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iso646.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/policy_checks.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/utility/utility.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/inline_variable.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/internal/identity.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/invoke.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/meta/type_traits.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/attributes.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/bad_optional_access.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdexcept
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/internal/optional.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/memory/memory.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/macros.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/optimization.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\setjmp.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\immintrin.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\wmmintrin.h
+注意: 包含文件:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\nmmintrin.h
+注意: 包含文件:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\smmintrin.h
+注意: 包含文件:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tmmintrin.h
+注意: 包含文件:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\pmmintrin.h
+注意: 包含文件:               C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\emmintrin.h
+注意: 包含文件:                C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\mmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\malloc.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\zmmintrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ammintrin.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/port.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_encoder.h
+注意: 包含文件:    ../../..\api/array_view.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\array
+注意: 包含文件:     ../../..\rtc_base/checks.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/strings/string_view.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iterator
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/internal/throw_delegate.h
+注意: 包含文件:      ../../..\rtc_base/numerics/safe_compare.h
+注意: 包含文件:       ../../..\rtc_base/type_traits.h
+注意: 包含文件:      ../../..\rtc_base/system/inline.h
+注意: 包含文件:      ../../..\rtc_base/system/rtc_export.h
+注意: 包含文件:    ../../..\api/call/bitrate_allocation.h
+注意: 包含文件:     ../../..\api/units/data_rate.h
+注意: 包含文件:      ../../..\api/units/data_size.h
+注意: 包含文件:       ../../..\rtc_base/units/unit_base.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cmath
+注意: 包含文件:        ../../..\rtc_base/numerics/safe_conversions.h
+注意: 包含文件:         ../../..\rtc_base/numerics/safe_conversions_impl.h
+注意: 包含文件:      ../../..\api/units/frequency.h
+注意: 包含文件:       ../../..\api/units/time_delta.h
+注意: 包含文件:    ../../..\rtc_base/buffer.h
+注意: 包含文件:     ../../..\rtc_base/zero_memory.h
+注意: 包含文件:    ../../..\rtc_base/deprecation.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_format.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree
+注意: 包含文件:   ../../..\api/audio_codecs/opus/audio_encoder_opus_config.h
+注意: 包含文件:   ../../..\common_audio/smoothing_filter.h
+注意: 包含文件:    ../../..\rtc_base/constructor_magic.h
+注意: 包含文件:   ../../..\modules/audio_coding/audio_network_adaptor/include/audio_network_adaptor.h
+注意: 包含文件:    ../../..\modules/audio_coding/audio_network_adaptor/include/audio_network_adaptor_config.h
+注意: 包含文件:   ../../..\modules/audio_coding/codecs/opus/opus_interface.h
+注意: 包含文件:    ../../..\modules/audio_coding/codecs/opus/opus_inst.h
+注意: 包含文件:     ../../..\rtc_base/ignore_wundef.h
+../../..\modules/audio_coding/codecs/opus/opus_inst.h(19): fatal error C1083: 无法打开包括文件: “opus.h”: No such file or directory
+[9/22] CXX obj/api/audio_codecs/opus/audio_decoder_multiopus/audio_decoder_multi_channel_opus.obj
+FAILED: obj/api/audio_codecs/opus/audio_decoder_multiopus/audio_decoder_multi_channel_opus.obj 
+ninja -t msvc -e environment.x64 -- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64/cl.exe" /nologo /showIncludes -DUSE_AURA=1 -D_HAS_EXCEPTIONS=0 -D__STD_C -D_CRT_RAND_S -D_CRT_SECURE_NO_DEPRECATE -D_SCL_SECURE_NO_DEPRECATE -D_ATL_NO_OPENGL -D_WINDOWS -DCERT_CHAIN_PARA_HAS_EXTRA_FIELDS -DPSAPI_VERSION=2 -DWIN32 -D_SECURE_ATL -DWINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP -DWIN32_LEAN_AND_MEAN -DNOMINMAX -D_UNICODE -DUNICODE -DNTDDI_VERSION=NTDDI_WIN10_RS2 -D_WIN32_WINNT=0x0A00 -DWINVER=0x0A00 -DNDEBUG -DNVALGRIND -DDYNAMIC_ANNOTATIONS_ENABLED=0 -DWEBRTC_ENABLE_PROTOBUF=0 -DRTC_ENABLE_VP9 -DHAVE_SCTP -DWEBRTC_LIBRARY_IMPL -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0 -DWEBRTC_WIN -DABSL_ALLOCATOR_NOTHROW=1 -I../../.. -Igen -I../../../third_party/abseil-cpp /Gy /FS /bigobj /utf-8 /Zc:sizedDealloc- /wd4117 /D__DATE__= /D__TIME__= /D__TIMESTAMP__= /W4 /WX /wd4091 /wd4127 /wd4251 /wd4275 /wd4312 /wd4324 /wd4351 /wd4355 /wd4503 /wd4589 /wd4611 /wd4100 /wd4121 /wd4244 /wd4505 /wd4510 /wd4512 /wd4610 /wd4838 /wd4995 /wd4996 /wd4456 /wd4457 /wd4458 /wd4459 /wd4200 /wd4201 /wd4204 /wd4221 /wd4245 /wd4267 /wd4305 /wd4389 /wd4702 /wd4701 /wd4703 /wd4661 /wd4706 /wd4715 /O1 /Ob2 /Oy- /Zc:inline /Gw /Oi /MD /wd4702 /wd5041 /wd4267 /TP /wd4577 /GR- /c ../../../api/audio_codecs/opus/audio_decoder_multi_channel_opus.cc /Foobj/api/audio_codecs/opus/audio_decoder_multiopus/audio_decoder_multi_channel_opus.obj /Fd"obj/api/audio_codecs/opus/audio_decoder_multiopus_cc.pdb"
+注意: 包含文件:  ../../..\api/audio_codecs/opus/audio_decoder_multi_channel_opus.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\exception
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\crtdbg.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winapifamily.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winpackagefamily.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\use_ansi.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdint
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstddef
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtr1common
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdlib
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_math.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_malloc.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_search.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iosfwd
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdio
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_stdio_config.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstring
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memory.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\errno.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cwchar
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\wchar.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wconio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wctype.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wdirect.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_share.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wprocess.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/stat.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/types.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\typeinfo
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_typeinfo.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_exception.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\eh.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_terminate.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cfloat
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\float.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\climits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\isa_availability.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\new
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xatomic.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector
+注意: 包含文件:   ../../../third_party/abseil-cpp\absl/types/optional.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/config.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/options.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ciso646
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iso646.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/policy_checks.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/utility/utility.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/inline_variable.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/internal/identity.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/invoke.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/meta/type_traits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/attributes.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/bad_optional_access.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdexcept
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/internal/optional.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/memory/memory.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/macros.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/optimization.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\setjmp.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\immintrin.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\wmmintrin.h
+注意: 包含文件:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\nmmintrin.h
+注意: 包含文件:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\smmintrin.h
+注意: 包含文件:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tmmintrin.h
+注意: 包含文件:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\pmmintrin.h
+注意: 包含文件:               C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\emmintrin.h
+注意: 包含文件:                C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\mmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\malloc.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\zmmintrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ammintrin.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/port.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_codec_pair_id.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_decoder.h
+注意: 包含文件:    ../../..\api/array_view.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\array
+注意: 包含文件:     ../../..\rtc_base/checks.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\string
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cctype
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\ctype.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/strings/string_view.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iterator
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/internal/throw_delegate.h
+注意: 包含文件:      ../../..\rtc_base/numerics/safe_compare.h
+注意: 包含文件:       ../../..\rtc_base/type_traits.h
+注意: 包含文件:      ../../..\rtc_base/system/inline.h
+注意: 包含文件:      ../../..\rtc_base/system/rtc_export.h
+注意: 包含文件:    ../../..\rtc_base/buffer.h
+注意: 包含文件:     ../../..\rtc_base/zero_memory.h
+注意: 包含文件:    ../../..\rtc_base/constructor_magic.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_format.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree
+注意: 包含文件:   ../../..\api/audio_codecs/opus/audio_decoder_multi_channel_opus_config.h
+注意: 包含文件:  ../../../third_party/abseil-cpp\absl/strings/match.h
+注意: 包含文件:  ../../..\modules/audio_coding/codecs/opus/audio_decoder_multi_channel_opus_impl.h
+注意: 包含文件:   ../../..\modules/audio_coding/codecs/opus/opus_interface.h
+注意: 包含文件:    ../../..\modules/audio_coding/codecs/opus/opus_inst.h
+注意: 包含文件:     ../../..\rtc_base/ignore_wundef.h
+../../..\modules/audio_coding/codecs/opus/opus_inst.h(19): fatal error C1083: 无法打开包括文件: “opus.h”: No such file or directory
+[10/22] CXX obj/api/audio_codecs/opus/audio_encoder_multiopus/audio_encoder_multi_channel_opus.obj
+FAILED: obj/api/audio_codecs/opus/audio_encoder_multiopus/audio_encoder_multi_channel_opus.obj 
+ninja -t msvc -e environment.x64 -- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64/cl.exe" /nologo /showIncludes -DUSE_AURA=1 -D_HAS_EXCEPTIONS=0 -D__STD_C -D_CRT_RAND_S -D_CRT_SECURE_NO_DEPRECATE -D_SCL_SECURE_NO_DEPRECATE -D_ATL_NO_OPENGL -D_WINDOWS -DCERT_CHAIN_PARA_HAS_EXTRA_FIELDS -DPSAPI_VERSION=2 -DWIN32 -D_SECURE_ATL -DWINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP -DWIN32_LEAN_AND_MEAN -DNOMINMAX -D_UNICODE -DUNICODE -DNTDDI_VERSION=NTDDI_WIN10_RS2 -D_WIN32_WINNT=0x0A00 -DWINVER=0x0A00 -DNDEBUG -DNVALGRIND -DDYNAMIC_ANNOTATIONS_ENABLED=0 -DWEBRTC_ENABLE_PROTOBUF=0 -DRTC_ENABLE_VP9 -DHAVE_SCTP -DWEBRTC_LIBRARY_IMPL -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0 -DWEBRTC_WIN -DABSL_ALLOCATOR_NOTHROW=1 -I../../.. -Igen -I../../../third_party/abseil-cpp /Gy /FS /bigobj /utf-8 /Zc:sizedDealloc- /wd4117 /D__DATE__= /D__TIME__= /D__TIMESTAMP__= /W4 /WX /wd4091 /wd4127 /wd4251 /wd4275 /wd4312 /wd4324 /wd4351 /wd4355 /wd4503 /wd4589 /wd4611 /wd4100 /wd4121 /wd4244 /wd4505 /wd4510 /wd4512 /wd4610 /wd4838 /wd4995 /wd4996 /wd4456 /wd4457 /wd4458 /wd4459 /wd4200 /wd4201 /wd4204 /wd4221 /wd4245 /wd4267 /wd4305 /wd4389 /wd4702 /wd4701 /wd4703 /wd4661 /wd4706 /wd4715 /O1 /Ob2 /Oy- /Zc:inline /Gw /Oi /MD /wd4702 /wd5041 /wd4267 /TP /wd4577 /GR- /c ../../../api/audio_codecs/opus/audio_encoder_multi_channel_opus.cc /Foobj/api/audio_codecs/opus/audio_encoder_multiopus/audio_encoder_multi_channel_opus.obj /Fd"obj/api/audio_codecs/opus/audio_encoder_multiopus_cc.pdb"
+注意: 包含文件:  ../../..\api/audio_codecs/opus/audio_encoder_multi_channel_opus.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\exception
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\crtdbg.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winapifamily.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winpackagefamily.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\use_ansi.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdint
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstddef
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtr1common
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdlib
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_math.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_malloc.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_search.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iosfwd
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdio
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_stdio_config.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstring
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memory.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\errno.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cwchar
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\wchar.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wconio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wctype.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wdirect.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_share.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wprocess.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/stat.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/types.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\typeinfo
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_typeinfo.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_exception.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\eh.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_terminate.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cfloat
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\float.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\climits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\isa_availability.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\new
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xatomic.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector
+注意: 包含文件:   ../../../third_party/abseil-cpp\absl/types/optional.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/config.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/options.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ciso646
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iso646.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/policy_checks.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/utility/utility.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/inline_variable.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/internal/identity.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/invoke.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/meta/type_traits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/attributes.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/bad_optional_access.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdexcept
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/internal/optional.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/memory/memory.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/macros.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/optimization.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\setjmp.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\immintrin.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\wmmintrin.h
+注意: 包含文件:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\nmmintrin.h
+注意: 包含文件:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\smmintrin.h
+注意: 包含文件:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tmmintrin.h
+注意: 包含文件:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\pmmintrin.h
+注意: 包含文件:               C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\emmintrin.h
+注意: 包含文件:                C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\mmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\malloc.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\zmmintrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ammintrin.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/port.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_codec_pair_id.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_encoder.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\string
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cctype
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\ctype.h
+注意: 包含文件:    ../../..\api/array_view.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\array
+注意: 包含文件:     ../../..\rtc_base/checks.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/strings/string_view.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iterator
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/internal/throw_delegate.h
+注意: 包含文件:      ../../..\rtc_base/numerics/safe_compare.h
+注意: 包含文件:       ../../..\rtc_base/type_traits.h
+注意: 包含文件:      ../../..\rtc_base/system/inline.h
+注意: 包含文件:      ../../..\rtc_base/system/rtc_export.h
+注意: 包含文件:    ../../..\api/call/bitrate_allocation.h
+注意: 包含文件:     ../../..\api/units/data_rate.h
+注意: 包含文件:      ../../..\api/units/data_size.h
+注意: 包含文件:       ../../..\rtc_base/units/unit_base.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cmath
+注意: 包含文件:        ../../..\rtc_base/numerics/safe_conversions.h
+注意: 包含文件:         ../../..\rtc_base/numerics/safe_conversions_impl.h
+注意: 包含文件:      ../../..\api/units/frequency.h
+注意: 包含文件:       ../../..\api/units/time_delta.h
+注意: 包含文件:    ../../..\rtc_base/buffer.h
+注意: 包含文件:     ../../..\rtc_base/zero_memory.h
+注意: 包含文件:    ../../..\rtc_base/deprecation.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_format.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree
+注意: 包含文件:   ../../..\api/audio_codecs/opus/audio_encoder_multi_channel_opus_config.h
+注意: 包含文件:    ../../..\api/audio_codecs/opus/audio_encoder_opus_config.h
+注意: 包含文件:  ../../..\modules/audio_coding/codecs/opus/audio_encoder_multi_channel_opus_impl.h
+注意: 包含文件:   ../../..\modules/audio_coding/codecs/opus/opus_interface.h
+注意: 包含文件:    ../../..\modules/audio_coding/codecs/opus/opus_inst.h
+注意: 包含文件:     ../../..\rtc_base/ignore_wundef.h
+../../..\modules/audio_coding/codecs/opus/opus_inst.h(19): fatal error C1083: 无法打开包括文件: “opus.h”: No such file or directory
+[11/22] CXX obj/modules/audio_coding/webrtc_multiopus/audio_encoder_multi_channel_opus_impl.obj
+FAILED: obj/modules/audio_coding/webrtc_multiopus/audio_encoder_multi_channel_opus_impl.obj 
+ninja -t msvc -e environment.x64 -- "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64/cl.exe" /nologo /showIncludes -DWEBRTC_CODEC_OPUS -DWEBRTC_OPUS_SUPPORT_120MS_PTIME=1 -DWEBRTC_CODEC_ISAC -DWEBRTC_CODEC_RED -DUSE_AURA=1 -D_HAS_EXCEPTIONS=0 -D__STD_C -D_CRT_RAND_S -D_CRT_SECURE_NO_DEPRECATE -D_SCL_SECURE_NO_DEPRECATE -D_ATL_NO_OPENGL -D_WINDOWS -DCERT_CHAIN_PARA_HAS_EXTRA_FIELDS -DPSAPI_VERSION=2 -DWIN32 -D_SECURE_ATL -DWINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP -DWIN32_LEAN_AND_MEAN -DNOMINMAX -D_UNICODE -DUNICODE -DNTDDI_VERSION=NTDDI_WIN10_RS2 -D_WIN32_WINNT=0x0A00 -DWINVER=0x0A00 -DNDEBUG -DNVALGRIND -DDYNAMIC_ANNOTATIONS_ENABLED=0 -DWEBRTC_ENABLE_PROTOBUF=0 -DRTC_ENABLE_VP9 -DHAVE_SCTP -DWEBRTC_LIBRARY_IMPL -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0 -DWEBRTC_WIN -DABSL_ALLOCATOR_NOTHROW=1 -I../../.. -Igen -I../../../third_party/abseil-cpp /Gy /FS /bigobj /utf-8 /Zc:sizedDealloc- /wd4117 /D__DATE__= /D__TIME__= /D__TIMESTAMP__= /W4 /WX /wd4091 /wd4127 /wd4251 /wd4275 /wd4312 /wd4324 /wd4351 /wd4355 /wd4503 /wd4589 /wd4611 /wd4100 /wd4121 /wd4244 /wd4505 /wd4510 /wd4512 /wd4610 /wd4838 /wd4995 /wd4996 /wd4456 /wd4457 /wd4458 /wd4459 /wd4200 /wd4201 /wd4204 /wd4221 /wd4245 /wd4267 /wd4305 /wd4389 /wd4702 /wd4701 /wd4703 /wd4661 /wd4706 /wd4715 /O1 /Ob2 /Oy- /Zc:inline /Gw /Oi /MD /wd4702 /wd5041 /wd4267 /TP /wd4577 /GR- /c ../../../modules/audio_coding/codecs/opus/audio_encoder_multi_channel_opus_impl.cc /Foobj/modules/audio_coding/webrtc_multiopus/audio_encoder_multi_channel_opus_impl.obj /Fd"obj/modules/audio_coding/webrtc_multiopus_cc.pdb"
+注意: 包含文件:  ../../..\modules/audio_coding/codecs/opus/audio_encoder_multi_channel_opus_impl.h
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\sal.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\exception
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\yvals.h
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\crtdbg.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winapifamily.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\winpackagefamily.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\use_ansi.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdint
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdint.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstddef
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtr1common
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdlib
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_math.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_malloc.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_search.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\initializer_list
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iosfwd
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstdio
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_stdio_config.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cstring
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memory.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+注意: 包含文件:         C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\errno.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cwchar
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\wchar.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wconio.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wctype.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wdirect.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wio.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_share.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wprocess.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/stat.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/types.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\typeinfo
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_typeinfo.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vcruntime_exception.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\eh.h
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_terminate.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmemory
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\limits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cfloat
+注意: 包含文件:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\float.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\climits
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\isa_availability.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\new
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xatomic.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\utility
+注意: 包含文件:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector
+注意: 包含文件:   ../../../third_party/abseil-cpp\absl/types/optional.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/config.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/options.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ciso646
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iso646.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/policy_checks.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/utility/utility.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tuple
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/inline_variable.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/internal/identity.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/base/internal/invoke.h
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/meta/type_traits.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\functional
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/base/attributes.h
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/bad_optional_access.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\stdexcept
+注意: 包含文件:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring
+注意: 包含文件:    ../../../third_party/abseil-cpp\absl/types/internal/optional.h
+注意: 包含文件:     ../../../third_party/abseil-cpp\absl/memory/memory.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/base/macros.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/optimization.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\intrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\setjmp.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\immintrin.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\wmmintrin.h
+注意: 包含文件:           C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\nmmintrin.h
+注意: 包含文件:            C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\smmintrin.h
+注意: 包含文件:             C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\tmmintrin.h
+注意: 包含文件:              C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\pmmintrin.h
+注意: 包含文件:               C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\emmintrin.h
+注意: 包含文件:                C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xmmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\mmintrin.h
+注意: 包含文件:                 C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\malloc.h
+注意: 包含文件:          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\zmmintrin.h
+注意: 包含文件:         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\ammintrin.h
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/port.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_encoder.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\string
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cctype
+注意: 包含文件:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\ctype.h
+注意: 包含文件:    ../../..\api/array_view.h
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\array
+注意: 包含文件:     ../../..\rtc_base/checks.h
+注意: 包含文件:      ../../../third_party/abseil-cpp\absl/strings/string_view.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cassert
+注意: 包含文件:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\assert.h
+注意: 包含文件:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\iterator
+注意: 包含文件:       ../../../third_party/abseil-cpp\absl/base/internal/throw_delegate.h
+注意: 包含文件:      ../../..\rtc_base/numerics/safe_compare.h
+注意: 包含文件:       ../../..\rtc_base/type_traits.h
+注意: 包含文件:      ../../..\rtc_base/system/inline.h
+注意: 包含文件:      ../../..\rtc_base/system/rtc_export.h
+注意: 包含文件:    ../../..\api/call/bitrate_allocation.h
+注意: 包含文件:     ../../..\api/units/data_rate.h
+注意: 包含文件:      ../../..\api/units/data_size.h
+注意: 包含文件:       ../../..\rtc_base/units/unit_base.h
+注意: 包含文件:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\cmath
+注意: 包含文件:        ../../..\rtc_base/numerics/safe_conversions.h
+注意: 包含文件:         ../../..\rtc_base/numerics/safe_conversions_impl.h
+注意: 包含文件:      ../../..\api/units/frequency.h
+注意: 包含文件:       ../../..\api/units/time_delta.h
+注意: 包含文件:    ../../..\rtc_base/buffer.h
+注意: 包含文件:     ../../..\rtc_base/zero_memory.h
+注意: 包含文件:    ../../..\rtc_base/deprecation.h
+注意: 包含文件:   ../../..\api/audio_codecs/audio_format.h
+注意: 包含文件:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\map
+注意: 包含文件:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree
+注意: 包含文件:   ../../..\api/audio_codecs/opus/audio_encoder_multi_channel_opus_config.h
+注意: 包含文件:    ../../..\api/audio_codecs/opus/audio_encoder_opus_config.h
+注意: 包含文件:   ../../..\modules/audio_coding/codecs/opus/opus_interface.h
+注意: 包含文件:    ../../..\modules/audio_coding/codecs/opus/opus_inst.h
+注意: 包含文件:     ../../..\rtc_base/ignore_wundef.h
+../../..\modules/audio_coding/codecs/opus/opus_inst.h(19): fatal error C1083: 无法打开包括文件: “opus.h”: No such file or directory
+ninja: build stopped: subcommand failed.
