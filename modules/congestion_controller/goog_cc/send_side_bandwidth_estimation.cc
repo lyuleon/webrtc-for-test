@@ -419,6 +419,8 @@ void SendSideBandwidthEstimation::UpdateEstimate(Timestamp at_time) {
   if (rtt_backoff_.CorrectedRtt(at_time) > rtt_backoff_.rtt_limit_) {
     if (at_time - time_last_decrease_ >= rtt_backoff_.drop_interval_ &&
         current_target_ > rtt_backoff_.bandwidth_floor_) {
+      
+      RTC_LOG(LS_INFO) << "UpdateEstimate 1 ";
       time_last_decrease_ = at_time;
       DataRate new_bitrate =
           std::max(current_target_ * rtt_backoff_.drop_fraction_,
@@ -435,6 +437,7 @@ void SendSideBandwidthEstimation::UpdateEstimate(Timestamp at_time) {
   // We trust the REMB and/or delay-based estimate during the first 2 seconds if
   // we haven't had any packet loss reported, to allow startup bitrate probing.
   if (last_fraction_loss_ == 0 && IsInStartPhase(at_time)) {
+    RTC_LOG(LS_INFO) << "UpdateEstimate 2 ";
     DataRate new_bitrate = current_target_;
     // TODO(srte): We should not allow the new_bitrate to be larger than the
     // receiver limit here.
@@ -467,6 +470,7 @@ void SendSideBandwidthEstimation::UpdateEstimate(Timestamp at_time) {
   }
 
   if (loss_based_bandwidth_estimation_.Enabled()) {
+    RTC_LOG(LS_INFO) << "UpdateEstimate 3, loss_based_bandwidth_estimation_ ";
     loss_based_bandwidth_estimation_.Update(
         at_time, min_bitrate_history_.front().second, last_round_trip_time_);
     DataRate new_bitrate = MaybeRampupOrBackoff(current_target_, at_time);
@@ -481,7 +485,10 @@ void SendSideBandwidthEstimation::UpdateEstimate(Timestamp at_time) {
     // We only make decisions based on loss when the bitrate is above a
     // threshold. This is a crude way of handling loss which is uncorrelated
     // to congestion.
+    RTC_LOG(LS_INFO) << "current_target_: " << ToString(current_target_) << ", bitrate_threshold_:"
+                   << ToString(bitrate_threshold_);
     if (current_target_ < bitrate_threshold_ || loss <= low_loss_threshold_) {
+      RTC_LOG(LS_INFO) << "Loss < 2% ";
       // Loss < 2%: Increase rate by 8% of the min bitrate in the last
       // kBweIncreaseInterval.
       // Note that by remembering the bitrate over the last second one can
@@ -506,6 +513,7 @@ void SendSideBandwidthEstimation::UpdateEstimate(Timestamp at_time) {
         // Loss between 2% - 10%: Do nothing.
       } else {
         // Loss > 10%: Limit the rate decreases to once a kBweDecreaseInterval
+        RTC_LOG(LS_INFO) << "Loss > 10% ";
         // + rtt.
         if (!has_decreased_since_last_fraction_loss_ &&
             (at_time - time_last_decrease_) >=

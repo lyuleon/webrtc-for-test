@@ -284,9 +284,12 @@ void AimdRateControl::ChangeBitrate(const RateControlInput& input,
       break;
 
     case kRcIncrease:
-      if (estimated_throughput > link_capacity_.UpperBound())
+      RTC_LOG(LS_INFO) << "AimdRateControl ChangeBitrate increase, estimated_throughput: "
+                   << ToString(estimated_throughput) << ", link_capacity_.UpperBound:" << link_capacity_.UpperBound();
+      if (estimated_throughput > link_capacity_.UpperBound()) {
+        RTC_LOG(LS_INFO) << "link_capacity_.Reset() ";
         link_capacity_.Reset();
-
+      }
       // Do not increase the delay based estimate in alr since the estimator
       // will not be able to get transport feedback necessary to detect if
       // the new estimate is correct.
