@@ -285,7 +285,7 @@ void AimdRateControl::ChangeBitrate(const RateControlInput& input,
 
     case kRcIncrease:
       RTC_LOG(LS_INFO) << "AimdRateControl ChangeBitrate increase, estimated_throughput: "
-                   << ToString(estimated_throughput) << ", link_capacity_.UpperBound:" << link_capacity_.UpperBound();
+                   << ToString(estimated_throughput) << ", link_capacity_.UpperBound:" << ToString(link_capacity_.UpperBound());
       if (estimated_throughput > link_capacity_.UpperBound()) {
         RTC_LOG(LS_INFO) << "link_capacity_.Reset() ";
         link_capacity_.Reset();
