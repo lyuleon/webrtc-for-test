@@ -2065,9 +2065,12 @@ WebRtcVideoChannel::WebRtcVideoSendStream::GetDegradationPreference() const {
   // result in blurry and unreadable text.
   // |this| acts like a VideoSource to make sure SinkWants are handled on the
   // correct thread.
+  RTC_LOG(LS_WARNING)<< "GetDegradationPreference ";
   if (!enable_cpu_overuse_detection_) {
     return webrtc::DegradationPreference::DISABLED;
   }
+
+  
 
   webrtc::DegradationPreference degradation_preference;
   if (rtp_parameters_.degradation_preference.has_value()) {
@@ -2095,6 +2098,8 @@ WebRtcVideoChannel::WebRtcVideoSendStream::GetDegradationPreference() const {
           webrtc::DegradationPreference::MAINTAIN_FRAMERATE;
     }
   }
+
+  RTC_LOG(LS_WARNING)<< "GetDegradationPreference " << degradation_preference;
 
   return degradation_preference;
 }

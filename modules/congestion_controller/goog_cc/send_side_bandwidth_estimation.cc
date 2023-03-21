@@ -485,10 +485,10 @@ void SendSideBandwidthEstimation::UpdateEstimate(Timestamp at_time) {
     // We only make decisions based on loss when the bitrate is above a
     // threshold. This is a crude way of handling loss which is uncorrelated
     // to congestion.
-    RTC_LOG(LS_INFO) << "current_target_: " << ToString(current_target_) << ", bitrate_threshold_:"
-                   << ToString(bitrate_threshold_);
+    //RTC_LOG(LS_INFO) << "current_target_: " << ToString(current_target_) << ", bitrate_threshold_:"
+                   //<< ToString(bitrate_threshold_);
     if (current_target_ < bitrate_threshold_ || loss <= low_loss_threshold_) {
-      RTC_LOG(LS_INFO) << "Loss < 2% ";
+      //RTC_LOG(LS_INFO) << "Loss < 2% ";
       // Loss < 2%: Increase rate by 8% of the min bitrate in the last
       // kBweIncreaseInterval.
       // Note that by remembering the bitrate over the last second one can
