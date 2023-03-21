@@ -1172,7 +1172,7 @@ void VideoStreamEncoder::MaybeEncodeVideoFrame(const VideoFrame& video_frame,
       !encoder_info_.has_trusted_rate_controller;
   frame_dropper_.Enable(frame_dropping_enabled);
   if (frame_dropping_enabled && frame_dropper_.DropFrame()) {
-    RTC_LOG(LS_VERBOSE)
+    RTC_LOG(LS_INFO)
         << "Drop Frame: "
            "target bitrate "
         << (last_encoder_rate_settings_

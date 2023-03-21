@@ -236,9 +236,13 @@ double AimdRateControl::GetNearMaxIncreaseRateBpsPerSecond() const {
   TimeDelta response_time = rtt_ + TimeDelta::Millis(100);
   if (in_experiment_)
     response_time = response_time * 2;
+  if(response_time.ms() > 1000) {
+    response_time = TimeDelta::Millis(1000);
+  }
   double increase_rate_bps_per_second =
       (avg_packet_size / response_time).bps<double>();
-  double kMinIncreaseRateBpsPerSecond = 4000;
+  // normally increase_rate_bps_per_second will be around 40000-50000
+  double kMinIncreaseRateBpsPerSecond = 500000;
   return std::max(kMinIncreaseRateBpsPerSecond, increase_rate_bps_per_second);
 }
 
@@ -306,12 +310,14 @@ void AimdRateControl::ChangeBitrate(const RateControlInput& input,
           DataRate additive_increase =
               AdditiveRateIncrease(at_time, time_last_bitrate_change_);
           increased_bitrate = current_bitrate_ + additive_increase;
+          RTC_LOG(LS_INFO) << "Aimd increase current_bitrate="<< current_bitrate_.bps() << ", additive_increase="<< additive_increase.bps();
         } else {
           // If we don't have an estimate of the link capacity, use faster ramp
           // up to discover the capacity.
           DataRate multiplicative_increase = MultiplicativeRateIncrease(
               at_time, time_last_bitrate_change_, current_bitrate_);
           increased_bitrate = current_bitrate_ + multiplicative_increase;
+          RTC_LOG(LS_INFO) << "Aimd increase current_bitrate="<< current_bitrate_.bps() << ", multiplicative_increase="<< multiplicative_increase.bps();
         }
         new_bitrate = std::min(increased_bitrate, troughput_based_limit);
       }
@@ -341,6 +347,7 @@ void AimdRateControl::ChangeBitrate(const RateControlInput& input,
       // Avoid increasing the rate when over-using.
       if (decreased_bitrate < current_bitrate_) {
         new_bitrate = decreased_bitrate;
+        RTC_LOG(LS_INFO) << "Aimd decrease current_bitrate="<< current_bitrate_.bps() << ", decreased_bitrate="<< decreased_bitrate.bps();
       }
 
       if (bitrate_is_initialized_ && estimated_throughput < current_bitrate_) {
@@ -384,7 +391,7 @@ DataRate AimdRateControl::MultiplicativeRateIncrease(
     Timestamp at_time,
     Timestamp last_time,
     DataRate current_bitrate) const {
-  double alpha = 1.08;
+  double alpha = 1.35;
   if (last_time.IsFinite()) {
     auto time_since_last_update = at_time - last_time;
     alpha = pow(alpha, std::min(time_since_last_update.seconds<double>(), 1.0));
