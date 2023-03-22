@@ -704,7 +704,7 @@ void GoogCcNetworkController::MaybeTriggerOnNetworkChanged(
                                          probes.begin(), probes.end());
     update->pacer_config = GetPacingRates(at_time);
 
-    RTC_LOG(INFO) << "bweTS=" << at_time.ms()
+    RTC_LOG(INFO) << "Gcc::MaybetriggerBitChange:"
     << " pushback_target_bps="<< last_pushback_target_rate_.bps()
     << " estimate_bps=" << loss_based_target_rate.bps()
     << " stable_target_rate=" << stable_target_rate.bps()

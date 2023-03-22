@@ -288,7 +288,7 @@ void AimdRateControl::ChangeBitrate(const RateControlInput& input,
       break;
 
     case kRcIncrease:
-      RTC_LOG(LS_INFO) << "AimdRateControl ChangeBitrate increase, estimated_throughput: "
+      RTC_LOG(LS_INFO) << "AimdRateControl kRcIncrease, estimated_throughput: "
                    << ToString(estimated_throughput) << ", link_capacity_.UpperBound:" << ToString(link_capacity_.UpperBound());
       if (estimated_throughput > link_capacity_.UpperBound()) {
         RTC_LOG(LS_INFO) << "link_capacity_.Reset() ";
@@ -327,7 +327,8 @@ void AimdRateControl::ChangeBitrate(const RateControlInput& input,
 
     case kRcDecrease: {
       DataRate decreased_bitrate = DataRate::PlusInfinity();
-
+      RTC_LOG(LS_INFO) << "AimdRateControl kRcDecrease, estimated_throughput: "
+                        << ToString(estimated_throughput) << ", link_capacity_.UpperBound:" << ToString(link_capacity_.UpperBound());
       // Set bit rate to something slightly lower than the measured throughput
       // to get rid of any self-induced delay.
       decreased_bitrate = estimated_throughput * beta_;
