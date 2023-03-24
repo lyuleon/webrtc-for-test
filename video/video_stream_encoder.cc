@@ -236,6 +236,7 @@ VideoStreamEncoder::VideoStreamEncoder(
       captured_frame_count_(0),
       dropped_frame_cwnd_pushback_count_(0),
       dropped_frame_encoder_block_count_(0),
+      dropped_frame_rateLimiter_(0),
       pending_frame_post_time_us_(0),
       accumulated_update_rect_{0, 0, 0, 0},
       accumulated_update_rect_is_valid_(true),
@@ -920,10 +921,13 @@ void VideoStreamEncoder::OnFrame(const VideoFrame& video_frame) {
                            << dropped_frame_cwnd_pushback_count_
                            << ", dropped (due to encoder blocked) "
                            << dropped_frame_encoder_block_count_
+                           << ", dropped (due to rate limiter) "
+                           << dropped_frame_rateLimiter_
                            << ", interval_ms " << kFrameLogIntervalMs;
           captured_frame_count_ = 0;
           dropped_frame_cwnd_pushback_count_ = 0;
           dropped_frame_encoder_block_count_ = 0;
+          dropped_frame_rateLimiter_ = 0;
         }
       });
 }
@@ -1056,6 +1060,11 @@ void VideoStreamEncoder::SetEncoderRates(
 
   if (rate_control_changed) {
     encoder_->SetRates(rate_settings.rate_control);
+    RTC_LOG(LS_INFO) << "VideoStreamEncoder rate_control::bitrate="<<rate_settings.rate_control.bitrate.get_sum_bps()
+                  << " rate_control::framerate_fps="<<rate_settings.rate_control.framerate_fps
+                  << " rate_control::bandwidth_allocation="<<rate_settings.rate_control.bandwidth_allocation.bps()
+                  << " encoder_target="<<rate_settings.encoder_target.bps()
+                  << " stable_encoder_target="<<rate_settings.stable_encoder_target.bps();
     frame_encode_metadata_writer_.OnSetRates(
         rate_settings.rate_control.bitrate,
         static_cast<uint32_t>(rate_settings.rate_control.framerate_fps + 0.5));
@@ -1183,6 +1192,7 @@ void VideoStreamEncoder::MaybeEncodeVideoFrame(const VideoFrame& video_frame,
         EncodedImageCallback::DropReason::kDroppedByMediaOptimizations);
     accumulated_update_rect_.Union(video_frame.update_rect());
     accumulated_update_rect_is_valid_ &= video_frame.has_update_rect();
+    ++dropped_frame_rateLimiter_;
     return;
   }
 
@@ -1677,7 +1687,7 @@ void VideoStreamEncoder::OnBitrateUpdated(DataRate target_bitrate,
 
   RTC_DCHECK(sink_) << "sink_ must be set before the encoder is active.";
 
-  RTC_LOG(LS_VERBOSE) << "OnBitrateUpdated, bitrate " << target_bitrate.bps()
+  RTC_LOG(LS_INFO) << "OnBitrateUpdated, bitrate " << target_bitrate.bps()
                       << " stable bitrate = " << stable_target_bitrate.bps()
                       << " link allocation bitrate = " << link_allocation.bps()
                       << " packet loss " << static_cast<int>(fraction_lost)

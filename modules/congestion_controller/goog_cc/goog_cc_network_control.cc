@@ -559,7 +559,6 @@ NetworkControlUpdate GoogCcNetworkController::OnTransportPacketsFeedback(
   result = delay_based_bwe_->IncomingPacketFeedbackVector(
       report, acknowledged_bitrate, probe_bitrate, estimate_,
       alr_start_time.has_value());
-  RTC_LOG(INFO) << "DelayBasedBwe result_bitrate=" << result.target_bitrate.bps();
   if (result.updated) {
     if (result.probe) {
       bandwidth_estimation_->SetSendBitrate(result.target_bitrate,
@@ -569,6 +568,16 @@ NetworkControlUpdate GoogCcNetworkController::OnTransportPacketsFeedback(
     // call UpdateDelayBasedEstimate after SetSendBitrate.
     bandwidth_estimation_->UpdateDelayBasedEstimate(report.feedback_time,
                                                     result.target_bitrate);
+
+    uint8_t fraction_loss = bandwidth_estimation_->fraction_loss();
+    TimeDelta round_trip_time = bandwidth_estimation_->round_trip_time();
+    DataRate target_rate = bandwidth_estimation_->target_rate();
+    DataRate link_capacity_rate = bandwidth_estimation_->GetEstimatedLinkCapacity();
+    RTC_LOG(LS_INFO) << "DelayBasedBwe MaybetriggerBitChange:"
+    << " target_rate=" << target_rate.bps()
+    << " link_capacity_rate=" << link_capacity_rate.bps()
+    << " rtt_ms=" << round_trip_time.ms()
+    << " fraction_loss_%" << (fraction_loss * 100) / 256.0;
     // Update the estimate in the ProbeController, in case we want to probe.
     MaybeTriggerOnNetworkChanged(&update, report.feedback_time);
   }
@@ -704,7 +713,7 @@ void GoogCcNetworkController::MaybeTriggerOnNetworkChanged(
                                          probes.begin(), probes.end());
     update->pacer_config = GetPacingRates(at_time);
 
-    RTC_LOG(INFO) << "Gcc::MaybetriggerBitChange:"
+    RTC_LOG(LS_VERBOSE) << "Gcc::MaybetriggerBitChange:"
     << " pushback_target_bps="<< last_pushback_target_rate_.bps()
     << " estimate_bps=" << loss_based_target_rate.bps()
     << " stable_target_rate=" << stable_target_rate.bps()
